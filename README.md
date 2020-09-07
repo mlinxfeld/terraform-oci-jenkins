@@ -19,11 +19,11 @@ Clone the repo from github by executing the command as follows and then go to te
 ```
 [opc@terraform-server ~]$ git clone https://github.com/mlinxfeld/terraform-oci-jenkins.git
 Cloning into 'terraform-oci-jenkins'...
-remote: Enumerating objects: 45, done.
-remote: Counting objects: 100% (45/45), done.
-remote: Compressing objects: 100% (31/31), done.
-remote: Total 45 (delta 19), reused 40 (delta 14), pack-reused 0
-Unpacking objects: 100% (45/45), done.
+remote: Enumerating objects: 32, done.
+remote: Counting objects: 100% (32/32), done.
+remote: Compressing objects: 100% (27/27), done.
+remote: Total 32 (delta 7), reused 30 (delta 5), pack-reused 0
+Unpacking objects: 100% (32/32), done.
 
 [opc@terraform-server ~]$ cd terraform-oci-jenkins/
 
