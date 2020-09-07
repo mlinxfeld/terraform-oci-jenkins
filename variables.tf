@@ -27,3 +27,11 @@ variable "service_ports" {
   default = [8080,22]
 }
 
+variable "JenkinsAdminUserName" {
+#  default = "jenkinsadm"
+   default = "admin"
+}
+
+variable "JenkinsAdminPassword" {
+  default = "KUNgan.2013"
+}
