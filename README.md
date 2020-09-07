@@ -6,8 +6,7 @@ In this repository I have documented my hands-on experience with Terrafrom for t
 
 ## Topology Diagram 
 
-With the usage of this example HCL code you can build topology documented by diagram below. This topology is extremly simplified for education purposes and rather cannot be used for production implementations. For accessing ATP I am using Flask-based Python code which utilizes OracleInstant Client and cx_Oracle library 
-for Python. 
+With the usage of this example HCL code you can build topology documented by diagram below. This topology is extremly simplified for education purposes and rather cannot be used for production implementations. 
 
 ![](terraform-oci-jenkins.png)
 
