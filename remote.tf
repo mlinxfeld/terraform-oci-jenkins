@@ -5,8 +5,8 @@ resource "null_resource" "FoggyKitchenJenkisSetup" {
         connection {
                 type        = "ssh"
                 user        = "opc"
-		        host        = data.oci_core_vnic.FoggyKitchenJenkins_VNIC1.public_ip_address
-                private_key = file(var.private_key_oci)
+		            host        = data.oci_core_vnic.FoggyKitchenJenkins_VNIC1.public_ip_address
+                private_key = tls_private_key.public_private_key_pair.private_key_pem
                 script_path = "/home/opc/myssh.sh"
                 agent       = false
                 timeout     = "10m"
@@ -36,7 +36,7 @@ resource "null_resource" "FoggyKitchenJenkisDisableSetupWizard" {
       type        = "ssh"
       user        = "opc"
       host        = data.oci_core_vnic.FoggyKitchenJenkins_VNIC1.public_ip_address
-      private_key = file(var.private_key_oci)
+      private_key = tls_private_key.public_private_key_pair.private_key_pem
       script_path = "/home/opc/myssh.sh"
       agent       = false
       timeout     = "10m"
@@ -50,7 +50,7 @@ resource "null_resource" "FoggyKitchenJenkisDisableSetupWizard" {
       type        = "ssh"
       user        = "opc"
       host        = data.oci_core_vnic.FoggyKitchenJenkins_VNIC1.public_ip_address
-      private_key = file(var.private_key_oci)
+      private_key = tls_private_key.public_private_key_pair.private_key_pem
       script_path = "/home/opc/myssh.sh"
       agent       = false
       timeout     = "10m"
@@ -64,7 +64,7 @@ resource "null_resource" "FoggyKitchenJenkisDisableSetupWizard" {
                 type        = "ssh"
                 user        = "opc"
                 host        = data.oci_core_vnic.FoggyKitchenJenkins_VNIC1.public_ip_address
-                private_key = file(var.private_key_oci)
+                private_key = tls_private_key.public_private_key_pair.private_key_pem
                 script_path = "/home/opc/myssh.sh"
                 agent       = false
                 timeout     = "10m"
